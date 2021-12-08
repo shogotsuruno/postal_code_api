@@ -1,0 +1,15 @@
+
+<div class="table_list">
+  <table border="1">
+    <thead>
+      <th>番組タイトル</th>
+    </thead>
+    <tbody>
+      <% @results["list"][@service[0]].each do |value| %>
+        <tr>
+          <td><%= value["title"] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

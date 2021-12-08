@@ -17,10 +17,24 @@
   margin-top: 100px;
   text-align: center;
 }
-.search_form {
+.form {
   padding: 10px 15px;
   width: 400px;
   font-size: 16px;
   border-radius: 3px;
   border: 2px solid red;
 }
+
+.search {
+  border: 2px solid red;
+}
+
+.num {
+  margin-top: 5px;
+  border: 2px solid rgb(0, 110, 255);
+}
+
+.table_list table {
+  margin: 10px auto;
+}
+
