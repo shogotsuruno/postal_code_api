@@ -1,0 +1,19 @@
+
+<div class="table_list">
+  <table border="1">
+    <thead>
+      <th>番組タイトル</th>
+      <th>開始時間</th>
+      <th>終了時間</th>
+    </thead>
+    <tbody>
+      <% @results["list"][@service[0]].each do |value| %>
+        <tr>
+          <td><%= value["title"] %></td>
+          <td><%=  Time.parse(value["start_time"]).strftime('%H:%M') %></td>
+          <td><%=  Time.parse(value["end_time"]).strftime('%H:%M') %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
