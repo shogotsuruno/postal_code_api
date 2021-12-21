@@ -1,6 +1,5 @@
 class SearchesController < ApplicationController
-  require 'net/http' 
-  require 'open-uri'
+  require 'net/http'
 
   def search
     if postal_code = params[:postal_code]
